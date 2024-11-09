@@ -1,19 +1,19 @@
-import state from "@/data/state.json";
-import plugins from "@/data/plugins.json";
+// import state from "@/data/state.json";
+// import plugins from "@/data/plugins.json";
 import { Download } from "lucide-react";
 import paths from "@/data/paths.json";
-function resolvePlugins() {
-  return plugins.map((plugin) => {
-    if (state.hasOwnProperty(plugin.id)) {
-      return {
-        ...plugin,
-        ...((state as Plugins)[plugin.id] as any),
-      };
-    } else {
-      return { ...plugin, downloads: 0 };
-    }
-  });
-}
+// function resolvePlugins() {
+//   return plugins.map((plugin) => {
+//     if (state.hasOwnProperty(plugin.id)) {
+//       return {
+//         ...plugin,
+//         ...((state as Plugins)[plugin.id] as any),
+//       };
+//     } else {
+//       return { ...plugin, downloads: 0 };
+//     }
+//   });
+// }
 
 type Plugins = { [key: string]: any };
 
