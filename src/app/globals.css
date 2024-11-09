@@ -19,3 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+table {
+  @apply text-sm;
+  td {
+    @apply px-2 py-1 border-b border-neutral-100 group-hover:bg-violet-50;
+  }
+  th {
+    @apply p-2 border-b border-neutral-600 text-start;
+  }
+}

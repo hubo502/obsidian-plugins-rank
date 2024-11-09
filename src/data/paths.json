@@ -1,0 +1,4 @@
+{
+    "plugins": "https://raw.githubusercontent.com/obsidianmd/obsidian-releases/HEAD/community-plugins.json",
+    "states": "https://raw.githubusercontent.com/obsidianmd/obsidian-releases/HEAD/community-plugin-stats.json"
+}
